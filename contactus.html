@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="main-content">
+        <div class="container">
+            <header>
+                <h1>Explore Kentucky</h1>
+                <img src="Kentucky.jpg" alt="Picture of the state outline">
+            </header>
+            <main>
+                <section>
+                    <h2>Contact Form</h2>
+                    <p>For more information about Kentucky, please fill out our form. We will be happy to review your questions. Typically replies are within 2-3 business days</p>
+                    <h3 class="ftitle">Please fill out the form below:</h3>
+                    <form id="contact-form" onsubmit="return validateEmails()">
+                        <div class="fgroup">
+                            <label for="first-name">First Name:</label>
+                            <input type="text" id="first-name" name="first-name" placeholder="John" required>
+                        </div>
+                    
+                        <div class="fgroup">
+                            <label for="last-name">Last Name:</label>
+                            <input type="text" id="last-name" name="last-name" placeholder="Doe" required>
+                        </div>
+                    
+                        <div class="fgroup">
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+                            <span id="email-error" class="error_message"></span>
+                        </div>
+                    
+                        <div class="fgroup">
+                            <label for="confirm-email">Confirm Email Address:</label>
+                            <input type="email" id="confirm-email" name="confirm-email" placeholder="Confirm email" required>
+                            <span id="confirm-email-error" class="error_message"></span>
+                        </div>
+                    
+                        <div class="fgroup">
+                            <label for="question">Questions or Concerns:</label>
+                            <textarea id="question" name="question" rows="4" placeholder="Ask your questions here"></textarea>
+                        </div>
+                    
+                        <button type="submit">Submit</button>
+                    </form>
+                </section>
+                <aside id="social-media">
+                    <h4>Join us on Social Media today!</h4>
+                    <ul>
+                        <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+                </aside>
+            </div>
+        </div> 
+        <div class="sidebar">
+            <div class="top">
+                <div class="logo">
+                    <i class="bx bx-camera"></i>
+                    <span>WGU D277</span>
+                </div>
+                <i class="bx bx-menu" id="btn"></i>
+            <div class="user">
+                <img src="user.jpg" alt="me" class="user_img">
+                <div>
+                    <p class="bold">Cory T.</p>
+                    <p>Admin</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <i class="bx bx-landscape"></i>
+                            <span class="nav-item">Home</span>
+                        </a>
+                        <span class="tooltip">Home</span>
+                    </li>
+                    <li>
+                        <a href="capital.html">
+                            <i class="bx bxs-castle"></i>
+                            <span class="nav-item">Frankfort</span>
+                        </a>
+                        <span class="tooltip">Frankfort</span>
+                    </li>
+                    <li>
+                        <a href="louisville.html">
+                            <i class="bx bx-ghost"></i>
+                            <span class="nav-item">Louisville</span>
+                        </a>
+                        <span class="tooltip">Louisville</span>
+                    </li>
+                    <li>
+                        <a href="lexington.html">
+                            <i class="bx bx-basketball"></i>
+                            <span class="nav-item">Lexington</span>
+                        </a>
+                        <span class="tooltip">Lexington</span>
+                    </li>
+                    <li>
+                        <a href="contactus.html">
+                            <i class="bx bx-happy-beaming"></i>
+                            <span class="nav-item">Contact Us</span>
+                        </a>
+                        <span class="tooltip">Contact us</span>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            <i class="bx bx-coffee"></i>
+                            <span class="nav-item">About Us</span>
+                        </a>
+                        <span class="tooltip">About Us</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <script src="scripts.js"></script>                
+    </main>
+    
+</body>
+</html>
